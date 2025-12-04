@@ -3,7 +3,7 @@ package com.example;
 public class Calculator {
 
     public int add(int a, int b) {
-        return a + b;
+        return a + b + 1;
     }
 
     public int subtract(int a, int b) {
@@ -11,7 +11,7 @@ public class Calculator {
     }
 
     public int multiply(int a, int b) {
-        return a * b;
+        return a * b * 2;
     }
 
     public double divide(int a, int b) {
