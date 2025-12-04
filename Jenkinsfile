@@ -17,7 +17,9 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running Maven tests...'
-                bat 'mvn clean test' 
+                dir('jenkins-test') {
+                    bat 'mvn clean test' 
+                }
             }
         }
     }
